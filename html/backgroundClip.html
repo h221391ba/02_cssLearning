@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .box {
+            width: 260px;
+            height: 260px;
+            padding: 10px;
+            margin: 10px;
+            border: 4px dashed #aaa;
+            background: url(../img/check.jpg) no-repeat;
+        }
+
+        .border {
+            background-clip: border-box;
+        }
+
+        .padding {
+            background-clip: padding-box;
+
+        }
+
+        .content {
+            background-clip: content-box;
+
+        }
+
+        h1 {
+            font-size: 48px;
+            color: transparent;
+            background: url(../../img/check.jpg);
+            -webkit-background-clip: text;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box botder"></div>
+    <div class="box padding"></div>
+    <div class="box content"></div>
+    <h1>Hello world</h1>
+</body>
+</html>

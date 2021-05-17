@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        body {
+            background: #aaa;
+        }
+        .card {
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 240px;
+            float: left;
+            /* display: inline-block; */
+            background: #fff;
+            /* text-align: justify; */  /*拉伸間隔維持整齊版面*/
+            word-wrap: break-word;
+        }
+        .card h2 a{
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /*over-flow 變成...*/
+        }
+        .card p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;    /*超過3行隱藏*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h2 title="ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione illo! Delectus autem itaque molestias expedita impedit deleniti vitae in vel saepe possimus, cum ad perspiciatis praesentium, molestiae earum!">
+                <a href="#"> ipsum, dolor sit amet consectetur  praesentium, molestiae earum!
+                </a>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi hic, corrupti aliquid, laudantium corporis earum deleniti libero nisi labore repudiandae unde ex? Natus excepturi doloribus totam, porro ab consequatur!</p>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="#">Lorem ipsum dolor sit amet consectetur,  magni itaque adipisci aliquid incidunt.</a>
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, in, temporibus aut nobis qui quam vel assumenda obcaecati maiores, eum cupiditate veritatis iste amet possimus dicta rem exercitationem sapiente sed?</p>
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo tempore dignissimos corrupti tempora corporis quae reprehenderit temporibus dicta culpa atque? Eligendi suscipit natus, nemo aspernatur cum delectus. Optio labore atque amet pariatur vero nam repudiandae, molestiae voluptatum cumque perferendis facilis quia dolor quos quod quam distinctio et esse autem! Repudiandae, nobis saepe voluptatum doloribus ea voluptas? Quam odit distinctio unde amet, placeat quas maxime, quasi consequatur rem cupiditate non delectus dolorem laudantium expedita sint vitae obcaecati in eius totam asperiores voluptatibus. Accusamus sequi beatae eos eveniet, recusandae temporibus maiores nam, veritatis earum atque quod voluptatum nulla! Suscipit vitae hic laboriosam consequatur magni cumque consectetur repellat! Quam odio saepe iste veniam non quo maiores quos iure ex suscipit voluptate asperiores tempora reiciendis modi aut numquam repudiandae illo at, quis nostrum. Repudiandae fuga at, consequatur maiores recusandae debitis sequi, aspernatur, suscipit numquam earum doloremque. Quia, nam. Id, sit nulla, enim nihil autem, asperiores nam temporibus sed natus reiciendis repellendus esse facere sint. Beatae, velit! Cupiditate quis nam officiis illum, at a ut mollitia quaerat nulla iste quae laborum! In minima aspernatur facere pariatur, earum tempore porro quisquam eligendi corrupti aperiam modi autem culpa ducimus voluptas consequatur deleniti repellendus explicabo reprehenderit quibusdam sint.
+        </div>
+    </div>
+</body>
+</html>

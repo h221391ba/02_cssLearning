@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*利用偽元素 加上clear*/
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .wrapper {
+            max-width: 800px; /*不會出現卷軸*/
+            margin: 0 auto;
+            /* min-height: 400px; */
+            background-color: powderblue;
+        }
+        .main {
+            background-color: rgb(214, 255, 117);
+            height: 800px;
+        }
+        .box {
+            width: calc(25% - 22px); /*計算*/
+            border: 1px solid #aaa;
+            background-color: pink;
+            float: left;
+            padding: 10px;
+            margin: 0 5px 10px;
+        }
+        /*.clear {
+            clear: both; 
+        }*/
+        .footer {
+            text-align: center;
+            padding: 10px;
+            width: 100vw;
+            background: #aaa;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="wrapper clearfix">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <!-- <div class="clear"></div> -->
+        </div>
+    </main>
+    <div class="footer">
+        This's footer.
+    </div>
+</body>
+</html>

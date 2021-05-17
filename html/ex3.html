@@ -76,6 +76,21 @@
 
         }
 
+        .btn {
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+            border-radius: 5px;
+            background: linear-gradient(pink, #fff, pink);
+            box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+        }
+        .btn:hover {
+            background: linear-gradient(pink,#fff);
+        }
+
     </style>
 </head>
 <body>
@@ -89,8 +104,9 @@
         <div class="content">
             <h3>Deadpool</h3>
             <p>Hello, I'm Wade Wilson.</p>
+            <a role="button" class="btn">Follow me</a>
         </div>
     </div>
-    <img src="../../img/loading.svg" width="96" class="loading">
+    <!-- <img src="../../img/loading.svg" width="96" class="loading"> -->
 </body>
 </html>

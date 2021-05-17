@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit</title> <!--前景用object fit  背景用background size 通常常用前景除非是真的當作背景才用background-->
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #000;
+            overflow: hidden;
+            float: left;
+            margin: 5px;
+        }
+
+        /* 設定圖片大小之後才做object-fit設定 不一定為100% */
+        .box img {
+            width: 100%;
+            height: 100%;
+            /* 一定要是object-fit的物件才可以使用object-position才能使用 */
+            /* 靠左上 */
+            object-position: left top;
+        }
+        .fill {
+            object-fit: fill;
+        }
+        .contain {
+            object-fit: contain;
+        }
+        .cover {
+            object-fit: cover;
+        }
+        .contain {
+            object-fit: contain;
+        }
+        /* 圖不縮放但跟容器依樣大 */
+        .none {
+            object-fit: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="fill" src="../img/dr_strange.jpg" alt="strange">
+    </div>
+    <div class="box">
+        <img class="contain" src="../img/dr_strange.jpg" alt="strange">
+    </div>
+    <div class="box">
+        <img class="cover" src="../img/dr_strange.jpg" alt="strange">
+    </div>
+    <div class="box">
+        <img class="none" src="../img/dr_strange.jpg" alt="strange">
+    </div>
+    <div class="box">
+        <img class="cover" src="../img/slide1.jpeg" alt="strange">
+    </div>
+</body>
+</html>

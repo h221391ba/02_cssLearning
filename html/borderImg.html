@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            /* background-color: pink; */
+            border: 20px solid transparent;
+            margin: 10px;
+        }
+
+        .img1 {
+            border-image: url(../../img/border-image2.png) 20 round; 
+            border-image-outset: 10px;
+        }
+
+        .img2 {
+            border-image: url(../../img/border-image2.png) 20 repeat; 
+        }
+
+        .img3 {
+            border-image: url(../../img/border-image2.png) 20 stretch; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img1 box"></div>
+    <div class="img2 box"></div>
+    <div class="img3 box"></div>
+
+</body>
+</html>
