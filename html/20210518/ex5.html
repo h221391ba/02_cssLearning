@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&display=swap" rel="stylesheet">
+    <title>ex1</title>
+    <style>
+        /* 基本元素 */
+        body {
+            float: center; 
+            background-color: gray;
+            font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+        }
+
+        .transition {
+
+        }
+
+        /* 模組 */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+            margin: 10px auto;
+            padding: 0px;
+            text-align: center;
+            box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cover {
+            height: 100px;
+            background: url(../../img/earth.jpg) center center no-repeat ;
+            background-size: cover;
+        }
+
+        .card figure {
+            margin: 10px auto;
+            margin-left: -60px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+
+        .selfi {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top ;
+        }
+
+        .icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /*圖片自己的長度位子*/
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        figure {
+            background-color: black;
+        }
+
+        figure:hover .selfi{
+            opacity: .5;
+        }
+
+        figure:hover .icon{
+            opacity: 1;
+        }
+
+
+
+        .content {
+            padding: 25px 5px 5px 5px;
+            border: 20px solid transparent;
+            border-image: url(../../img/border-image2.png) 20 round;
+            
+            
+        }
+
+        .card h3 {
+            padding: 5px;
+            border-bottom: 1px solid gray;
+            transition: .5s;
+        }
+
+        .card p {
+            color: gray;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -48px;
+            margin-bottom: -48px;
+
+        }
+
+        .btn {
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+            border-radius: 5px;
+            background: linear-gradient(pink, #fff, pink);
+            box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+        }
+        .btn:hover {
+            background: linear-gradient(pink,#fff);
+        }
+
+        .card:hover>.content>h3 {
+            letter-spacing:5px;
+            /*縮排 因為letter-spacing 是字後面增加間距 所以會導致致中的字前後距離不一樣 用text-indent縮排增加自首前面的距離*/
+            text-indent: 5px; 
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10 5px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="cover">
+
+        </div>
+        <figure>
+            <img src="../../img/deadpool.jpg" class="selfi">
+            <img src="../../img/picture.svg" class="icon">
+        </figure>
+        <div class="content">
+            <h3>Deadpool</h3>
+            <p>Hello, I'm Wade Wilson.</p>
+            <a role="button" class="btn">Follow me</a>
+        </div>
+    </div>
+    <!-- <img src="../../img/loading.svg" width="96" class="loading"> -->
+</body>
+</html>

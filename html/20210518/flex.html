@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        max-width: 800px;
+        height: 600px;
+        background-color: #aaa;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /*stretch 內容不可限制高度 才會和容器一樣高 但是如果容器沒有設高度則容器跟著內容高度變動*/
+        /* align-items: stretch; */
+        /* flex-wrap: wrap; */
+        align-items: flex-start; 
+        /* align-items: center; */ /*不換行使用*/
+        /* align-content: flex-start; *//*換行使用*/
+    }
+
+    .box {
+        margin: 10px;
+        width: 100px;
+        /* height: 100px; */
+        background-color: pink;
+        /*flex-grow: 1;平均分配內容寬度*/
+        /* flex-grow: 1; */
+        /*剩餘空間不夠 會壓縮內容 flex-shrink: 1; (預設) 比較不好控制 最常用到是0*/
+        /*0則會超出*/
+        flex-shrink: 0;
+        /*flex-basis 會去覆蓋掉其他屬性 少數案例*/
+        /* flex-basis: 120px; */
+    }
+
+    /*比較少用 用在rwd 區塊置換*/
+
+    .box1 {
+        /* flex-grow: 1; */
+        /* flex-shrink: 3; */
+        /*flex-basis: 120px;*/
+        /* flex: 1 3 120; */
+        /*可以寫在一起 當空間有剩 grow 不夠 shrink */
+        /*oder大排最後*/
+        order: 3;
+        /*個別對齊*/
+        align-self: stretch;
+    }
+    .box2 {
+        /* flex-grow: 1; */
+        align-self: center;
+    }
+
+    .box4 {
+        order: 2;
+    }
+
+    .box5 {
+        order: -2;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>

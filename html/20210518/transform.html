@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overflowHidden {
+            overflow: hidden;
+        }
+
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            margin: 10px;
+            float: left;
+            transition: .4s;
+        }
+        
+        .boxWrap {
+            margin: 10px;
+            border: 2px solid rgb(20, 19, 19) ;
+            float: left;
+        }
+
+        .boxWrap .box {
+            margin: 0;
+        }
+
+        /*右移20px*/
+        .translateX:hover {
+            transform: translateX(20px); 
+        }
+
+        /*左移20px*/
+        .translatey:hover {
+            transform: translatey(20px); 
+        }
+
+        /*右上移2動*/
+        .translate:hover {
+            transform: translate(20px, -20px); 
+        }
+
+        /*逆時針轉30度*/
+        .rotate:hover {
+            transform: rotate(-30deg); 
+        }
+
+        /*逆時針轉30度*/
+        /*transition影響旋轉效果會在時間內轉完圈數*/
+        .rotate1:hover {
+            transform: rotate(720deg); 
+        }
+        
+        /*x軸的形變 數字倍數*/
+        .scalex:hover {
+            transform: scalex(1.2);
+        }
+
+        .scaley:hover {
+            transform: scaley(0.8);
+        }
+
+        /*一個值則等比例xy同時縮放*/
+
+        .scale1:hover {
+            transform: scale(0.8);
+        }
+
+        /*若要不一樣 要設2個值*/
+        .scale2:hover {
+            transform: scale(1.2 0.8);
+        }
+
+        /*感應區和變形區分開避免變形後抖動情況出現*/
+        .boxWrap:hover .scale02 {
+            transform: scale(0.2);
+        }
+
+        /*碰到才顯示東西，可以搭配捲動事件監聽*/
+        .scale03 {
+            transform: scale(0);
+        }
+
+        .boxWrap:hover .scale03 {
+            transform: scale(1);
+        }
+
+        /**/
+        .boxWrap:hover .slide {
+            transform: translatey(-110px);
+        }
+
+        /*淡出*/
+        .move {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        
+        .boxWrap:hover .move {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        /*skew傾斜較不好控制*/
+        .skew:hover {
+            transform: skew(15deg);
+        }
+        /*多種變形 同時移動轉動*/
+        .transform:hover {
+            transform: translateX(-100px) rotate(50deg);
+        }
+
+        /*矩陣*/
+        /*同時旋轉放大*/
+        .matrix:hover {
+            transform: matrix(1, 1.2, -1.2, 1, 0, 0);
+        }
+
+        /**/
+        .rotateOr {
+            /*改變變形中心點*/
+            transform-origin: left top;
+        }
+        .rotate2:hover {
+            transform: rotate(30deg);
+            
+        }
+
+        .rotateOr1 {
+            /*改變變形中心點*/
+            transform-origin: center top;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box translateX">translate</div>
+    <div class="box translatey">translatey</div>
+    <div class="box translate">translate</div>
+    <div class="box rotate">rotate1-30</div>
+    <div class="box rotate1">rotate720</div>
+    <div class="box scalex">scalex</div>
+    <div class="box scaley">scaley</div>
+    <div class="box scale1">scale1</div>
+    <div class="box scale2">scale2</div>
+    <div class="boxWrap">
+        <div class="box scale02"></div>
+    </div>
+    <div class="boxWrap">
+        <div class="box scale03"></div>
+    </div>
+    <div class="boxWrap overflowHidden">
+        <div class="box slide"></div>
+    </div>
+    <div class="boxWrap overflowHidden">
+        <div class="box move"></div>
+    </div>
+    <div class="box skew">skew</div>
+    <div class="box transform">transform</div>
+    <div class="box matrix">matrix</div>
+    <div class="box rotateOr rotate2">改變變形中心點</div>
+    <div class="box rotateOr1 rotate2">改變變形中心點</div>
+</body>
+</html>

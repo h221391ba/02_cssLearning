@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            transition: 1s;
+            margin: 5px;
+        }
+
+        .transitionDelate {
+            transition-delay: 1s;
+            /*transition: 1s 1s; 後面的值為delate效果 所以可以合併一起寫*/
+        }
+
+
+        /*可以指定改變的屬性*/
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            transition: width .5s, background 1s .5s, height .5s 1.5s;
+            margin: 5px;
+        }
+
+        .wrap:hover .box{
+            background-color: red;
+            width: 150px;
+        }
+        .wrap:hover .box1{
+            background-color: red;
+            width: 150px;
+        }
+
+        /*慢慢加速*/
+        .ease {
+            transition-timing-function: ease;
+        }
+        /*速度一致*/
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        /*動畫一開始有慢慢增加速度的感覺*/
+        .easeIn {
+            transition-timing-function: ease-in;
+        }
+        /*動畫要結束有慢慢增加速度的感覺*/
+        .easeOut {
+            transition-timing-function: ease-out;
+        }
+        .easeInOut {
+            transition-timing-function: ease-in-out;
+        }
+
+        /*自訂timeing function*/
+        /*用貝茲縣來調整曲率*/
+        .cubic {
+            transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+        }
+        /*有點物理效果 彈一下的感覺*/
+        /*可以是負值*/
+        .cubic {
+            transition-timing-function: cubic-bezier(.51,-0.52,.63,1.57);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box ease"></div>
+        <div class="box linear"></div>
+        <div class="box easeIn"></div>
+        <div class="box easeOut"></div>
+        <div class="box easeInOut"></div>
+        <div class="box cubic"></div>
+        <div class="box cubic2"></div>
+        <div class="box ease transitionDelate"></div>
+        <div class="box1 transitionMulti"></div>
+
+    </div>
+</body>
+</html>
