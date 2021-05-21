@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(../../img/space-bg.jpg);
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg) translate(200px) ; /*有順序問題*/
+            }
+            100% {
+                transform: rotate(360deg) translate(200px) ;
+            }
+        }
+        @keyframes moonRotate {
+            0% {
+                transform: rotate(0deg) translate(90px) ; /*有順序問題*/
+            }
+            100% {
+                transform: rotate(360deg) translate(90px) ;
+            }
+        }
+        .wrapper {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+            position: relative;
+        }
+        .wrapper img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sun {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .earth {
+            
+            position: absolute;
+            top: calc(50% - 37px);
+            left: calc(50% - 37px);
+            transform: translate(-50%, -50%);
+            animation: rotate 4s infinite linear;
+        }
+        .orbit {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -200px 0 0 -200px;
+            border: 1px solid #aaa;
+        }
+        .moon {
+            left: calc(50% - 24px);
+            top: calc(50% - 24px);
+            animation: moonRotate 4s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="orbit"></div>
+        <img class="sun" src="../../img/sun.png" alt="">
+        <div class="earth">
+            <img src="../../img/earth.png" alt="">
+            <img class="moon" src="../../img/moon.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

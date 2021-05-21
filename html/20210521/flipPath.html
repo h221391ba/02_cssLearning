@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            transition: .4s;
+            margin: 10px;
+        }
+        .box img {
+            width: 100%;
+        }
+        .circle {
+            clip-path: circle(10% at 50% 50%);
+        }
+        .circle:hover {
+            clip-path: circle(50% at 50% 50%);
+        }
+        .ellipse {
+            clip-path: ellipse(20% 50% at 50% 50%);
+        }
+        .inset {
+            clip-path: inset(10px 20px 30px 40px round 10% 20% 30% 40%);
+        }
+        .triangle {
+            clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        }
+        .diamond {
+            clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box circle">
+        <img src="../../img/ironman.jpg" alt="" class="">
+    </div>
+    <div class="box ellipse">
+        <img src="../../img/ironman.jpg" alt="" class="">
+    </div>
+    <div class="box inset">
+        <img src="../../img/ironman.jpg" alt="" class="">
+    </div>
+    <div class="box triangle">
+        <img src="../../img/ironman.jpg" alt="" class="">
+    </div>
+    <div class="box diamond">
+        <img src="../../img/ironman.jpg" alt="" class="">
+    </div>
+</body>
+</html>

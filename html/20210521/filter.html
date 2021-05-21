@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 160px;
+            transition: .2s;
+        }
+        .blur:hover {
+            filter: blur(10px);
+        }
+        .brightness:hover {
+            filter: brightness(50%);
+        }
+        .contrast:hover {
+            filter: contrast(120%);
+        }
+        .grayscale:hover {
+            filter: grayscale(100%);
+        }
+        .hue:hover {
+            filter: hue-rotate(120deg);
+        }
+        .invert:hover {
+            filter: invert(100%);
+        }
+        .saturate:hover {
+            filter: saturate(200%);
+        }
+        .sepia:hover {
+            filter: sepia(100%);
+        }
+        .dropShadow:hover {
+            filter: drop-shadow(0 0 5px #333);
+        }
+        .filter:hover {
+            filter: hue-rotate(120deg), brightness(50%);
+        }
+    </style>
+</head>
+<body>
+    <img src="../../img/ironman.jpg" alt="" class="blur">
+    <img src="../../img/ironman.jpg" alt="" class="brightness">
+    <img src="../../img/ironman.jpg" alt="" class="contrast">
+    <img src="../../img/ironman.jpg" alt="" class="grayscale">
+    <img src="../../img/ironman.jpg" alt="" class="hue">
+    <img src="../../img/ironman.jpg" alt="" class="invert">
+    <img src="../../img/ironman.jpg" alt="" class="saturate">
+    <img src="../../img/ironman.jpg" alt="" class="sepia">
+    <img src="../../img/ironman.jpg" alt="" class="dropShadow">
+    <img src="../../img/ironman.jpg" alt="" class="filter">
+</body>
+</html>

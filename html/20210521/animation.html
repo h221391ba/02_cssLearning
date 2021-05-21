@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes animate1 {
+            from {
+                background-color: pink;
+            }
+            to {
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
+        @keyframes animate2 {
+            0% {
+                background-color: pink;
+            }
+            50% {
+                background-color: red;
+                border-radius: 50%;
+            }
+            100% {
+                background-color: yellow;
+            }
+        }
+        @keyframes extend {
+            0% {
+                width: 100px;
+            }
+            100% {
+                width: 200px;
+            }
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: animate2;
+            animation-duration: 1s;
+            /* animation-iteration-count: 3; */
+            /* animation-delay: 1s; */
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: both; */
+            /* animation-play-state: paused; */
+            /* animation-timing-function: steps(3); */
+            animation: animate2 1.5s .5s infinite alternate, extend 1.5s .5s infinite alternate;
+        }
+        .box:hover {
+            animation-play-state: paused;
+        }
+        /* .start {
+            animation-timing-function: steps(3, start);
+        }
+        .end {
+            animation-timing-function: steps(3, end);
+        } */
+    </style>
+</head>
+<body>
+    <div class="box start"></div>
+    <div class="box end"></div>
+    
+</body>
+</html>

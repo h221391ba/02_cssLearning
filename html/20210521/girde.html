@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid {
+            background-color: lightblue;
+            margin: 0 auto;
+            max-width: 960px;
+            height: 450px;
+            display: grid;
+            /*fr 只有grid可以用*/
+            /* grid-template-columns: auto auto auto auto;  */
+            /* grid-template-columns: repeat(2, 1fr) auto auto; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* grid-column-gap: 10px; */
+            /* grid-gap: 10px 20px; */
+            grid-template-columns: repeat(4, auto);
+            justify-content: stretch;
+            align-items: flex-start;
+        }
+        .box {
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid #aaa;
+        }
+        .box5 {
+            justify-self: start;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+</html>
