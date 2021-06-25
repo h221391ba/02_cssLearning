@@ -11,12 +11,12 @@ FullName:Balloons Normal
 MenuName:Balloons
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\BALLOONS.TTF
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\BALLOONS.TTF
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
 FileLength:37628
-FileModTime:1621257124
+FileModTime:1621213146
 WeightClass:400
 WidthClass:5
 AngleClass:0
@@ -27,15 +27,15 @@ NameArray:0,Win,1,Balloons
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\LICENSE.txt
-FileModTime:1621257124
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\LICENSE.txt
+FileModTime:1621213146
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\README.md
-FileModTime:1621257124
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\README.md
+FileModTime:1621213146
 %EndFont
 
 %BeginFont
@@ -48,14 +48,14 @@ FullName:Font Awesome 5 Brands Regular
 MenuName:Font Awesome 5 Brands Regular
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Brands-Regular-400.otf
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Brands-Regular-400.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
 hasSVG:no
 VariableFontType:NonVariableFont
 FileLength:329300
-FileModTime:1621257125
+FileModTime:1621213146
 WeightClass:400
 WidthClass:5
 AngleClass:0
@@ -75,14 +75,14 @@ FullName:Font Awesome 5 Free Regular
 MenuName:Font Awesome 5 Free Regular
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Free-Regular-400.otf
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Free-Regular-400.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
 hasSVG:no
 VariableFontType:NonVariableFont
 FileLength:102604
-FileModTime:1621257125
+FileModTime:1621213146
 WeightClass:400
 WidthClass:5
 AngleClass:0
@@ -102,14 +102,14 @@ FullName:Font Awesome 5 Free Solid
 MenuName:Font Awesome 5 Free Solid
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Free-Solid-900.otf
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\use-on-desktop\Font Awesome 5 Free-Solid-900.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
 hasSVG:no
 VariableFontType:NonVariableFont
 FileLength:314844
-FileModTime:1621257125
+FileModTime:1621213146
 WeightClass:400
 WidthClass:5
 AngleClass:0
@@ -122,7 +122,7 @@ NameArray:0,Win,16,Font Awesome 5 Free
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:E:\programing\MFEE17_Class\02_cssLearning\Font\fontawesome-free-5.0.1\web-fonts-with-css\index.html
-FileModTime:1621257125
+OutlineFileName:D:\程式學習\MFEE17\02_cssLearning\Font\fontawesome-free-5.0.1\web-fonts-with-css\index.html
+FileModTime:1621213146
 %EndFont
 
